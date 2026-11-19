@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción - Kitty Tech</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Urbanist:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="menu-fondo">
+        <nav class="nav-contenedor container">
+            <section class="menu-logo">    
+                <img src="Gemini_Generated_Image_6i1z0i6i1z0i6i1z.png" alt="Logo" width="20%">
+                <h1>U-CODE</h1>
+            </section>
+            <section class="menu-lista">
+                <ul class="menu-links"> 
+                    <li class="menu-item"><a href="pagprincipal.html">HOME</a></li>
+                    <li class="menu-item"><a href="sobre-nosotros.html">SOBRE NOSOTROS</a></li>
+                    <li class="menu-item"><a href="login.html">INICIAR SESIÓN</a></li>
+                    <li class="menu-item"><a href="registro.html">REGISTRARSE</a></li>
+                </ul>
+            </section> 
+        </nav>
+    </header>
+
+    <main class="container form-main">
+        <form action="procesar.php" method="POST" class="formulario-inscripcion">
+            <fieldset>
+                <legend>Formulario de Inscripción Universitaria</legend>
+                
+                <p class="form-ayuda">Por favor, completa todos los campos con tus datos reales para procesar la matrícula.</p>
+
+                <table class="tabla-formulario">
+                    <tr>
+                        <td><label for="carrera">Carrera Seleccionada:</label></td>
+                        <td>
+                            <select name="carrera" id="carrera" required>
+    <option value="">Seleccione una carrera...</option>
+    <option value="Licenciatura en Sistemas">Licenciatura en Sistemas</option>
+    <option value="Tecnicatura en Programación">Tecnicatura en Programación</option>
+    <option value="Ingeniería en Informática">Ingeniería en Informática</option>
+    <option value="Licenciatura en Ciencia de Datos">Licenciatura en Ciencia de Datos</option>
+    <option value="Tecnicatura en Ciberseguridad">Tecnicatura en Ciberseguridad</option>
+    <option value="Licenciatura en Desarrollo de Videojuegos">Licenciatura en Desarrollo de Videojuegos</option>
+</select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="nombre">Nombre Completo:</label></td>
+                        <td><input type="text" id="nombre" name="nombre" required placeholder="Ej: Juan Pérez"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dni">DNI / Documento:</label></td>
+                        <td><input type="number" id="dni" name="dni" required placeholder="Sin puntos ni espacios"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Correo Electrónico:</label></td>
+                        <td><input type="email" id="email" name="email" required placeholder="nombre@correo.com"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="telefono">Teléfono de Contacto:</label></td>
+                        <td><input type="tel" id="telefono" name="telefono" required placeholder="Ej: 1123456789"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="turno">Turno de Preferencia:</label></td>
+                        <td>
+                            <input type="radio" id="mañana" name="turno" value="Mañana" checked> <label for="mañana" class="label-inline">Mañana</label>
+                            <input type="radio" id="noche" name="turno" value="Noche"> <label for="noche" class="label-inline">Noche</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="td-boton">
+                            <button type="submit" class="btn-enviar">Confirmar Inscripción</button>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </main>
+
+</body>
+</html>

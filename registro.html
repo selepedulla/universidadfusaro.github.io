@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse - U-CODE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Urbanist:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="menu-fondo">
+        <nav class="nav-contenedor container">
+            <section class="menu-logo">    
+                <img src="Gemini_Generated_Image_6i1z0i6i1z0i6i1z.png" alt="Logo" width="20%">
+                <h1>U-CODE</h1>
+            </section>
+            <section class="menu-lista">
+                <ul class="menu-links"> 
+                    <li class="menu-item"><a href="pagprincipal.html">HOME</a></li>
+                    <li class="menu-item"><a href="sobre-nosotros.html">SOBRE NOSOTROS</a></li>
+                    <li class="menu-item"><a href="login.html">INICIAR SESIÓN</a></li>
+                    <li class="menu-item"><a href="registro.html">REGISTRARSE</a></li>
+                </ul>
+            </section> 
+        </nav>
+    </header>
+
+    <main class="container form-main">
+        <form action="procesar_registro.php" method="POST" class="formulario-inscripcion">
+            <fieldset>
+                <legend>Crear Cuenta de Estudiante</legend>
+                <table class="tabla-formulario">
+                    <tr>
+                        <td><label for="nombre">Nombre Completo:</label></td>
+                        <td><input type="text" id="nombre" name="nombre" required placeholder="Nombre y Apellido"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Correo Electrónico:</label></td>
+                        <td><input type="email" id="email" name="email" required placeholder="correo@ejemplo.com"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Contraseña Nueva:</label></td>
+                        <td><input type="password" id="password" name="password" required placeholder="Mínimo 8 caracteres"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="td-boton">
+                            <button type="submit" class="btn-enviar">Crear Cuenta</button>
+                        </td>
+                    </tr>
+                </table>
+                <div class="form-links">
+                    <p>¿Ya tenés un usuario? <a href="login.html">Iniciá sesión</a></p>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
